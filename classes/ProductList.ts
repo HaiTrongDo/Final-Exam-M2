@@ -15,12 +15,22 @@ export class ProductList {
     }
 
     deleteProductByName(product:string):void {
-        let currentProduct;
         let dataList = this.productList;
-        this.productList = dataList.filter(element => {
+        dataList = this.productList.filter(element => {
             return (product !== element.name)
         });
+        this.showTableInConsole(dataList)
+        this.productList = dataList
     }
+
+    deleteProductById(findId:number):void {
+        let dataList = this.productList.filter(element => {
+            return (findId !== element.productID)
+        });
+        this.showTableInConsole(dataList)
+        this.productList = dataList
+    }
+
 
     showAllProductTableInConsole(){
         let data = this.productList;

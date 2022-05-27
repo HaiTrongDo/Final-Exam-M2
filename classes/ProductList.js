@@ -11,11 +11,19 @@ var ProductList = /** @class */ (function () {
     ProductList.prototype.updateProduct = function () {
     };
     ProductList.prototype.deleteProductByName = function (product) {
-        var currentProduct;
         var dataList = this.productList;
-        this.productList = dataList.filter(function (element) {
+        dataList = this.productList.filter(function (element) {
             return (product !== element.name);
         });
+        this.showTableInConsole(dataList);
+        this.productList = dataList;
+    };
+    ProductList.prototype.deleteProductById = function (findId) {
+        var dataList = this.productList.filter(function (element) {
+            return (findId !== element.productID);
+        });
+        this.showTableInConsole(dataList);
+        this.productList = dataList;
     };
     ProductList.prototype.showAllProductTableInConsole = function () {
         var data = this.productList;

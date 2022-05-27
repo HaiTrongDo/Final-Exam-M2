@@ -15,9 +15,33 @@ productsList.addProduct(samsungS7);
 productsList.addProduct(vinsmartPro);
 productsList.addProduct(daikinInverter);
 productsList.addProduct(panasonicInverter);
-// productsList.deleteProductByName("Iphone X")
-// productsList.deleteProductByName("Samsung Galaxy S7")
-// productsList.updatingProduct(101,panasonicInverter.name, 100,15,panasonicInverter.category)
-productsList.findProductByName(panasonicInverter.name);
-productsList.findProductById(102);
+// hiên thị tất cả sp
 // console.table(productsList.productList);
+// hiển thị bảng, chỉ hiện thỉ những thông tin cần theo yêu cầu đề bài
+// productsList.showAllProductTableInConsole()
+// xóa sp theo tên
+// productsList.deleteProductByName(IphoneX.name) // xóa sp theo tên
+// productsList.deleteProductByName(samsungS7.name) // xóa sp theo tên
+// productsList.deleteProductByName(vinsmartPro.name) // xóa sp theo tên
+// productsList.deleteProductByName(daikinInverter.name) // xóa sp theo tên
+// productsList.deleteProductByName(panasonicInverter.name) // xóa sp theo tên
+// xóa sp theo Id
+// productsList.deleteProductById(100)
+// productsList.deleteProductById(101)
+// productsList.deleteProductById(102)
+// productsList.deleteProductById(103)
+// productsList.deleteProductById(104)
+//update product
+// productsList.updatingProduct(101,panasonicInverter.name, 100,15,panasonicInverter.category)
+// tìm kiếm sp theo tên
+// productsList.findProductByName(IphoneX.name)
+// productsList.findProductByName(samsungS7.name)
+// productsList.findProductByName(vinsmartPro.name)
+// productsList.findProductByName(daikinInverter.name)
+// productsList.findProductByName(panasonicInverter.name)
+// tìm kiếm sp theo ID
+// productsList.findProductById(100)
+// productsList.findProductById(101)
+// productsList.findProductById(102)
+// productsList.findProductById(103)
+// productsList.findProductById(104)
